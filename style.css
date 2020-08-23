@@ -3,7 +3,7 @@
 .center {
     text-align: center;
     border-radius: 100px;
-    background-color: lightBlue;
+    background-color: #E7CA4E;
 }
 
 html {
@@ -13,6 +13,5 @@ html {
 body {
     background-color: #222222;
 }
-image {
-	
-}
+
+image {}
