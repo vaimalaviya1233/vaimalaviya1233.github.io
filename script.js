@@ -10,7 +10,7 @@ function AddList(){
         comment = !comment;
         document.getElementById('list').innerHTML += (
             `<div class='${comment ? 'list' : 'list-2'}' onclick='this.style.textDecoration = "line-through"'>
-                <button class='cancel' onclick='this.parentElement.style.display = "none";'>×</button>
+                <button class='cancel' id='style' onclick='this.parentElement.style.display = "none";'>ⓧ</button>
                 <span class='text'>${x}</span>
             </div>`
         );
