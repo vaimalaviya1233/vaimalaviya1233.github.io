@@ -19,3 +19,5 @@ function AddList(){
 }
 /*Onclick add btn*/
 document.getElementById('btn-send-todo').onclick = AddList;
+
+var CurrentLk = window.location;
