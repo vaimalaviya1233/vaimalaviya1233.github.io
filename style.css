@@ -9,6 +9,9 @@ body{
     color: white;
     font-size: 20px;
 }
+.block {
+    display: inline-block;
+}
 div.header{
     text-align: center;
 }
