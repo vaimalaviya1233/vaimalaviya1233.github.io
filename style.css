@@ -8,6 +8,10 @@ body{
     background-color: rgb(21, 21, 21);
     color: white;
     font-size: 20px;
+    --block-text-color: #222;
+    --block-background-color: #fff;
+    --block-accent-color: #00ae86;
+    --block-shadow-color: #444;
 }
 .block {
     display: inline-block;
