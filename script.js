@@ -1,12 +1,11 @@
-var comment = true;
-function AddList(){
+function AddList() {
     var x = document.getElementById('input-todo').value;
-    if(x.length < 3){
+    if (x.length < 3) {
         document.getElementById('input-todo').value = 'Too low !';
-    }else if(x.length > 20){
+    } else if (x.length > 20) {
         document.getElementById('input-todo').value = 'Too big !';
-    }else{
-        let d = new Date();
+    } else {
+        var comment = true;
         comment = !comment;
         document.getElementById('list').innerHTML += (
             `<div class='${comment ? 'list' : 'list-2'}' onclick='this.style.textDecoration = "line-through"'>
@@ -17,6 +16,7 @@ function AddList(){
         document.getElementById('input-todo').value = '';
     }
 }
+
 /*Onclick add btn*/
 document.getElementById('btn-send-todo').onclick = AddList;
 
