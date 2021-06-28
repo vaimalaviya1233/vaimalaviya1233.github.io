@@ -1,36 +1,48 @@
 <!doctype html>
-<html>
- <head>
-  <title>😊 Welcome 😊</title>
-  <style>.block{display: inline-block !important;}</style>
-  <link rel="stylesheet" href="style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184188917-1"></script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-   gtag('config', 'UA-184188917-1');
-  </script>
-  <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
- </head>
- <body>
-  <div class='header'>
-   <div class='contener-header'>
-    <div class='title'>
-     <h1>Todo-List</h1>
+<html lang="en">
+<head>
+    <title> Todo List </title>
+    <link href="style.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184188917-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-184188917-1');
+    </script>
+    <link href="https://unpkg.com/blocks.css/dist/blocks.min.css" rel="stylesheet"/>
+</head>
+<body id="body">
+<div class='header' onload="oppener();">
+    <div class='contender-header'>
+        <div class='title'>
+            <a href="index.html"><h1> Index </h1></a>
+        </div>
     </div>
-    <div>
-     <input type='text' class="wrapper block"
-      id='input-todo'><button id='btn-send-todo'
-      class='block accent inline round'>Add</button>
+    <div class='list-gen'>
+        <div class='list-contener' id='list'>
+        </div>
     </div>
-   </div>
-  </div>
-  <div class='list-gen'>
-   <div class='list-contener' id='list'>
-   </div>
-  </div>
-  <script src="script.js"></script>
- </body>
+</div>
+<script src="index.js"></script>
+<script>
+    start();
+    function start(){
+        document.getElementById('body').innerHTML += (`<div class='yellow'></div>`);
+    }
+    oppener();
+    var comment = true;
+    document.getElementById('list').innerHTML += (
+        `<div class='${comment ? 'list' : 'list-2'}' onclick='this.style.textDecoration = "line-through"'>
+                <button class='cancel' id='style' onclick='this.parentElement.style.display = "none";'>Remove</button>
+                <span class='text'> Todo-List </span>
+        </div>`
+    );
+</script>
+</body>
 </html>

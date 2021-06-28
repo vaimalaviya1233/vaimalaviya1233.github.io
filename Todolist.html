@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title> Todo List </title>
+    <style>.block {
+        display: inline-block !important;
+    }</style>
+    <link href="todolist.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184188917-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-184188917-1');
+    </script>
+    <link href="https://unpkg.com/blocks.css/dist/blocks.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class='header'>
+    <div class='contender-header'>
+        <div class='title'>
+            <h1>Todo-List</h1>
+        </div>
+        <div>
+            <label for='input-todo'></label><input class="style1" id='input-todo'
+                                                   type='text'>
+            <button class='style1'
+                    id='btn-send-todo'>Add
+            </button>
+        </div>
+    </div>
+</div>
+<div class='list-gen'>
+    <div class='list-contener' id='list'>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
