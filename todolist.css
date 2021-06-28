@@ -1,5 +1,6 @@
 /*Tous les import*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 body {
     /*cursor: url("<svg xmlns='https://www.w3.org/2000/svg' width='64' height='64' style='font-size: 64px'><text y='50'>👋</text></svg>");*/
@@ -58,16 +59,17 @@ input[type='text'].style1 {
     padding: 15px 20px;
     font-size: 15px;
     border-radius: 13px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Caveat",cursive;
     border: orangered solid 2px;
     background-color: rgb(60, 60, 60);
     color: white;
 }
 
 button.style1 {
+
     padding: 15px 20px;
     font-size: 15px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Caveat",cursive;
     border: #34A853 solid 2px;
     border-radius: 10px;
     background-color: rgb(40, 40, 40);
