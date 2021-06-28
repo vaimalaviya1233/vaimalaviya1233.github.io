@@ -49,6 +49,7 @@ div.list-2 {
     border: none;
     background-color: rgb(50, 50, 50);
     text-align: center;
+    font-family: "Caveat", cursive;
 }
 
 div.list-contener {
@@ -66,14 +67,24 @@ input[type='text'].style1 {
 }
 
 button.style1 {
-
-    padding: 15px 20px;
-    font-size: 15px;
+    padding: 10.5px 15.49px;
+    font-size: 21px;
     font-family: "Caveat",cursive;
     border: #34A853 solid 2px;
     border-radius: 10px;
     background-color: rgb(40, 40, 40);
     color: white;
+}
+button.style1:hover {
+    animation: blinktext 1.5s infinite;
+}
+
+@keyframes blinktext {
+    /*0%{opacity: 0;}*/
+    25%{opacity: .5;}
+    50%{opacity: 1;}
+    75%{opacity: .5;}
+    100%{opacity: 0;}
 }
 
 button.cancel {

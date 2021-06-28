@@ -1,8 +1,8 @@
 function AddList() {
     var x = document.getElementById('input-todo').value;
-    if (x.length < 3) {
+    if (x.length <= 0) {
         document.getElementById('input-todo').value = 'Too low !';
-    } else if (x.length > 20) {
+    } else if (x.length >= 20) {
         document.getElementById('input-todo').value = 'Too big !';
     } else {
         var comment = true;

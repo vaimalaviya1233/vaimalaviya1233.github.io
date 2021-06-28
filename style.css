@@ -1,12 +1,13 @@
 /*Tous les import*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 body {
     /*cursor: url("<svg xmlns='https://www.w3.org/2000/svg' width='64' height='64' style='font-size: 64px'><text y='50'>👋</text></svg>");*/
-    background-color: #d0d0d0 !important;
+    background-color: darkslategrey !important;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Caveat",cursive;
     color: white;
     font-size: 20px;
     --block-text-color: #222;
@@ -54,33 +55,6 @@ div.list-contener {
     margin: 20px;
 }
 
-input[type='text'].style1 {
-    padding: 15px 20px;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    border: none;
-    background-color: rgb(60, 60, 60);
-    color: white;
-}
-
-button.style1 {
-    padding: 15px 20px;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    border: none;
-    background-color: rgb(40, 40, 40);
-    color: white;
-}
-
-button.cancel {
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 0, 0, 0.774);
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    margin: 5px;
-}
-
 button {
     outline: none;
 }
@@ -92,4 +66,15 @@ input {
 style1 {
     border-radius: 30px;
     border: 0;
+}
+.list-gen .list-contener{
+    align-items: center;
+    text-align: center;
+}
+a.link:hover {
+    text-shadow: #000000 1px 0 10px;
+
+}
+a.link {
+    color: salmon;
 }
