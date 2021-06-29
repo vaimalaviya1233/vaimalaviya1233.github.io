@@ -43,22 +43,37 @@ div.list {
     background-color: rgb(30, 30, 30);
     text-align: center;
 }
+p.text {
+    display: inline-block;
+    size:30px !important;
+    margin: 2px;
+}
 
 div.list-2 {
-    width: 100%;
-    border: none;
+    right: 50px;
+    padding: 6px;
+    margin: 11px;
+    width: 65%;
+    border: orangered 3px solid;
+    border-radius: 6px;
     background-color: rgb(50, 50, 50);
     text-align: center;
     font-family: "Caveat", cursive;
 }
 
 div.list-contener {
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px;
+    padding: 9px;
+
 }
 
 input[type='text'].style1 {
-    padding: 15px 20px;
-    font-size: 15px;
+    padding: 5px 41px;
+    margin-right: 11px;
+    font-size: 29.5px;
     border-radius: 13px;
     font-family: "Caveat",cursive;
     border: orangered solid 2px;
@@ -107,7 +122,11 @@ input {
 style1 {
     border-radius: 30px;
     border: 0;
+    margin: 3px;
 }
 div.inner-arrange {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     align-items: center !important;
 }

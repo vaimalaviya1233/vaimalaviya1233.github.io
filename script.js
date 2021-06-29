@@ -10,7 +10,7 @@ function AddList() {
         document.getElementById('list').innerHTML += (
             `<div class='${comment ? 'list' : 'list-2'}' onclick='this.style.textDecoration = "line-through"'>
                 <button class='cancel' id='style' onclick='this.parentElement.style.display = "none";'>Remove</button>
-                <span class='text'>${x}</span>
+                <p class='text'>${x}</p>
             </div>`
         );
         document.getElementById('input-todo').value = '';

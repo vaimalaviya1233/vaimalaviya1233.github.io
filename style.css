@@ -7,7 +7,7 @@ body {
     background-color: darkslategrey !important;
     margin: 0;
     padding: 0;
-    font-family: "Caveat",cursive;
+    font-family: "Caveat", cursive;
     color: white;
     font-size: 20px;
     --block-text-color: #222;
@@ -15,66 +15,33 @@ body {
     --block-accent-color: #00ae86;
     --block-shadow-color: #444;
 }
-.yellow {
-
-    align-self: center;
-    height: 100px;
-    width: 100px;
-    background-color: #1b79d7;
-    position: relative;
-
-}
-
-.block {
-    display: inline-block;
-}
 
 div.header {
     text-align: center;
-}
-
-div.list-gen {
-    margin: 0;
-}
-
-div.list {
-    width: 100%;
-    border: none;
-    background-color: rgb(30, 30, 30);
-    text-align: center;
-}
-
-div.list-2 {
-    width: 100%;
-    border: none;
-    background-color: rgb(50, 50, 50);
-    text-align: center;
-}
-
-div.list-contener {
-    margin: 20px;
-}
-
-button {
-    outline: none;
-}
-
-input {
-    outline: none;
 }
 
 style1 {
     border-radius: 30px;
     border: 0;
 }
-.list-gen .list-contener{
-    align-items: center;
-    text-align: center;
-}
+
 a.link:hover {
     text-shadow: #000000 1px 0 10px;
 
 }
+
 a.link {
     color: salmon;
+}
+
+.home .todo {
+    margin: 10px !important;
+    border-radius: 6px;
+    border: none;
+}
+
+div.title {
+    margin: 10px;
+    padding: 10px 206px 10px 206px;
+
 }
